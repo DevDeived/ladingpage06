@@ -68,20 +68,40 @@ section {
 }
 
 @media (max-width: 768px) {
+  #icons{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
   #icons-flex {
-    flex-direction: column;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 15px;
   }
-
-  #icons-end, #time {
+  #icons-end {
     flex-direction: column;
-    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    padding: 0;
+  }
+  #icons-end, #time {
+    height: 5vh;
+    font-size: 10px;
+    display: flex;
+    gap: 15px;
   }
 
   .rede {
+    font-size: 8px;
+    margin-left: 8px;
     display: flex;
-    gap: 10px;
+    gap: 5px;
   }
 
   /* Ajustes extras para otimizar a visualização */
@@ -175,7 +195,7 @@ section {
 /* ======== RESPONSIVIDADE ======== */
 @media (max-width: 1024px) {
   #flex-menu {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .bnt {
@@ -510,6 +530,7 @@ button.next {
   #img-choose {
     width: 100%;
     margin-bottom: 20px; /* Espaço entre imagem e texto */
+    
   }
 
   #flex-choose {
