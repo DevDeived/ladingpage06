@@ -1,7 +1,12 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Evita a rolagem lateral */
+  margin: 0;
+  padding: 0;
 }
 #icons {
   width: 100%;
@@ -768,4 +773,17 @@ button.next {
   text-align: center;
   margin-right: 150px;
 }
+@media (max-width: 768px) {
+  .copy {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
 
+  .copy1 {
+    align-items: center;
+    margin-right: 0;
+    text-align: center;
+  }
+}
