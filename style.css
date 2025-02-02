@@ -78,15 +78,14 @@ section {
   #icons-flex {
     height: 12vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 10px 5px;
+    font-size: 10px;
   }
   #icons-end {
     flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 15px;
     margin-left: 0;
     padding: 0;
   }
@@ -94,7 +93,7 @@ section {
     height: 5vh;
     font-size: 10px;
     display: flex;
-    gap: 15px;
+    gap: 5px;
   }
 
   .rede {
