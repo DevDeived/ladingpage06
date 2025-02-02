@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
 
     <title>Landing Page 06</title>
-  </head>
-  <body>
-    <section id="icons">
-      <div id="icons-flex">
+</head>
+<body>
+<section id="icons">
+    <div id="icons-flex">
         <div id="icons-end">
-          <p>
+        <p>
             <i class="fa-solid fa-location-dot"></i> 123 street, New York, USA
-          </p>
-          <p>
+        </p>
+        <p>
             <i class="fa-regular fa-clock"></i> Man - Fri : 09:00 AM - 09:00 PM
-          </p>
+        </p>
         </div>
         <div id="time">
-          <p>
+        <p>
             <a href="#"><i class="fa-solid fa-phone"></i></a> +012 345 6789
-          </p>
-          <div class="rede">
+        </p>
+        <div class="rede">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          </div>
-          <div class="rede">
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-          <div class="rede">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <div>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="menu-container">
-      <div id="flex-menu">
+        <div class="rede">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="rede">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="menu-container">
+    <div id="flex-menu">
         <div id="menu-icons">
-          <h2><i class="fa-solid fa-car"></i> Drivin</h2>
+        <h2><i class="fa-solid fa-car"></i> Drivin</h2>
         </div>
         <div id="menu">
-          <div class="container">
+        <div class="container">
             <a href="">Home</a>
-          </div>
-          <div class="container">
-            <a href="">About</a>
-          </div>
-          <div class="container">
-            <a href="">Courses</a>
-          </div>
-          <div class="container">
-            <a href="">Pages</a>
-          </div>
-          <div class="container">
-            <a href="">Contact</a>
-          </div>
         </div>
-      </div>
-      <div id="botao">
+        <div class="container">
+            <a href="">About</a>
+        </div>
+        <div class="container">
+            <a href="">Courses</a>
+        </div>
+        <div class="container">
+            <a href="">Pages</a>
+        </div>
+        <div class="container">
+            <a href="">Contact</a>
+        </div>
+        </div>
+    </div>
+    <div id="botao">
         <button class="bnt">Gat Started</button>
-      </div>
+    </div>
     </section>
     <div class="carousel">
-      <div class="banner-content">
+    <div class="banner-content">
         <h1>
-          Learn To Drive With <br />
-          confidence
+        Learn To Drive With <br />
+        confidence
         </h1>
         <div class="banner-buttons">
-          <button class="btn-primary">Learn More</button>
-          <button class="btn-secondary">Our Courses</button>
+        <button class="btn-primary">Learn More</button>
+        <button class="btn-secondary">Our Courses</button>
         </div>
-      </div>
-      <button class="prev">&lt;</button>
-      <div class="carousel-track-container">
+    </div>
+    <button class="prev">&lt;</button>
+    <div class="carousel-track-container">
         <ul class="carousel-track">
-          <li class="carousel-slide current-slide">
+        <li class="carousel-slide current-slide">
             <img src="./assets/img1.jpeg" alt="Banner 1" />
-          </li>
-          <li class="carousel-slide">
+        </li>
+        <li class="carousel-slide">
             <img src="./assets/img2.jpeg" alt="Banner 2" />
-          </li>
-          <li class="carousel-slide">
+        </li>
+        <li class="carousel-slide">
             <img src="./assets/img3.jpeg" alt="Banner 3" />
-          </li>
+        </li>
         </ul>
-      </div>
-      <button class="next">&gt;</button>
+    </div>
+    <button class="next">&gt;</button>
     </div>
     <section id="container-choose">
     <div id="flex-choose">
@@ -227,48 +227,48 @@
     </section>
 
     <script>
-      const track = document.querySelector(".carousel-track");
-      const slides = Array.from(track.children);
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
+    const track = document.querySelector(".carousel-track");
+    const slides = Array.from(track.children);
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
 
       // Calcula a largura de cada slide dinamicamente
-      const slideWidth = slides[0].getBoundingClientRect().width;
+    const slideWidth = slides[0].getBoundingClientRect().width;
 
       // Posiciona os slides lado a lado
-      slides.forEach((slide, index) => {
+    slides.forEach((slide, index) => {
         slide.style.left = `${slideWidth * index}px`;
-      });
+    });
 
-      const moveToSlide = (track, currentSlide, targetSlide) => {
+    const moveToSlide = (track, currentSlide, targetSlide) => {
         // Move o track para o próximo slide
         track.style.transform = `translateX(-${targetSlide.style.left})`;
 
         // Atualiza as classes para indicar o slide atual
         currentSlide.classList.remove("current-slide");
         targetSlide.classList.add("current-slide");
-      };
+    };
 
       // Adiciona funcionalidade ao botão "Next"
-      nextButton.addEventListener("click", () => {
+    nextButton.addEventListener("click", () => {
         const currentSlide = track.querySelector(".current-slide");
         const nextSlide = currentSlide.nextElementSibling;
 
         if (nextSlide) {
-          moveToSlide(track, currentSlide, nextSlide);
+        moveToSlide(track, currentSlide, nextSlide);
         }
-      });
+    });
 
       // Adiciona funcionalidade ao botão "Previous"
-      prevButton.addEventListener("click", () => {
+    prevButton.addEventListener("click", () => {
         const currentSlide = track.querySelector(".current-slide");
         const prevSlide = currentSlide.previousElementSibling;
 
         if (prevSlide) {
-          moveToSlide(track, currentSlide, prevSlide);
+        moveToSlide(track, currentSlide, prevSlide);
         }
-      });
-      
+    });
+
     </script>
-  </body>
+</body>
 </html>
