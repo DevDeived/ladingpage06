@@ -397,6 +397,7 @@ button.next {
 @media (max-width: 768px) {
   .carousel {
     height: 60vh; /* Reduz altura em telas menores */
+    margin-bottom: 20px;
   }
 
   .banner-content {
@@ -528,8 +529,7 @@ button.next {
 
   #img-choose {
     width: 100%;
-    margin-bottom: 20px; /* Espaço entre imagem e texto */
-    
+    margin-top: 10px;
   }
 
   #flex-choose {
@@ -638,6 +638,7 @@ button.next {
   .team-meet {
     flex-direction: column; /* Empilhar os cards */
     align-items: center;
+    margin-top: 5px;
   }
 
   .image {
