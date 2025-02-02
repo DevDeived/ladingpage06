@@ -91,7 +91,7 @@ section {
   }
   #icons-end, #time {
     height: 5vh;
-    font-size: 10px;
+    font-size: 8px;
     display: flex;
     gap: 5px;
   }
