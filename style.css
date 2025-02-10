@@ -191,7 +191,7 @@ section {
   color: white;
   font-weight: bold;
   border: none;
-  padding: 17px 20px;
+  padding: 12px 25px;
   cursor: pointer;
   font-size: 0.9rem;
   border-radius: 5px;
@@ -659,9 +659,17 @@ button.next {
   .image {
     max-width: 250px; /* Aumenta um pouco o tamanho para telas menores */
   }
+  .image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
 }
-
-/*Footer*/
+@media (max-width: 480px) {
+  .image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+}
 /* Estilização do rodapé */
 #rodape {
   background-color: #0c2b4a;
