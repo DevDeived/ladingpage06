@@ -297,6 +297,10 @@ section {
     color: white;
     padding: 2px;
   }
+  #menu-icons h2 {
+    margin-right: 90px;
+  }
+  
 }
 
 @media (max-width: 480px) {
