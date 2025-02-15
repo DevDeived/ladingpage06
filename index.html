@@ -47,6 +47,7 @@
 <section id="menu-container">
     <div id="flex-menu">
         <div id="menu-icons">
+            <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
             <h2><i class="fa-solid fa-car"></i> Drivin</h2>
         </div>
         <div id="menu">
@@ -230,6 +231,11 @@
     </section>
 
     <script>
+    // JavaScript para alternar o menu em telas menores
+    document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("menu").classList.toggle("active");
+        });
+
     const track = document.querySelector(".carousel-track");
     const slides = Array.from(track.children);
     const prevButton = document.querySelector(".prev");
