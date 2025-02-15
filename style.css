@@ -133,6 +133,7 @@ section {
 }
 .icons-choose {
   display: block;
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -140,7 +141,8 @@ section {
 
 .spas {
   display: flex;
-  margin-left: 12px;
+  width: 100%;
+  margin-left: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
