@@ -273,9 +273,11 @@ section {
     display: none; /* Esconde o menu padrão */
     flex-direction: column;
     position: absolute;
-    top: 130px;
+    top: 180px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(250, 248, 248, 0.8);
+    color: #002244;
+    font-weight: bold;
     width: 100px;
     z-index: 1000;
     text-align: center;
