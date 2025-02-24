@@ -655,6 +655,10 @@ button.next {
     grid-template-columns:repeat(1fr);
     place-items: center;
   }
+  .icons-choose span{
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
 }
 
 #delivery-team {
