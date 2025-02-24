@@ -5,20 +5,18 @@
 }
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Impede rolagem lateral */
+  overflow-x: hidden; 
 }
 
-/* Garante que todas as seções fiquem dentro da tela */
 section {
   max-width: 100%;
   
 }
 @media (max-width: 768px) {
   html, body {
-    overflow-x: hidden; /* Garante que em telas menores não tenha rolagem lateral */
+    overflow-x: hidden; 
   }
 }
-
 #icons {
   width: 100%;
   height: 4vh;
@@ -103,13 +101,12 @@ section {
     gap: 5px;
   }
 
-  /* Ajustes extras para otimizar a visualização */
   #icons-end, #time {
     padding: 10px 0;
   }
 
   #icons-flex i {
-    font-size: 18px;  /* Aumentando o tamanho do ícone para melhorar a visibilidade */
+    font-size: 18px;  
   }
 }
 @media (max-width: 480px) {
@@ -182,7 +179,6 @@ section {
   background-color: #f2be00;
 }
 
-/* Posicionando o botão hambúrguer à esquerda */
 #hamburger {
   display: none;
   font-size: 24px;
@@ -249,7 +245,6 @@ section {
   transition: background-color 0.3s ease;
 }
 
-/* ======== RESPONSIVIDADE ======== */
 @media (max-width: 1024px) {
   #flex-menu {
     font-size: 12px;
@@ -270,7 +265,7 @@ section {
   }
 
   #menu {
-    display: none; /* Esconde o menu padrão */
+    display: none; 
     flex-direction: column;
     position: absolute;
     top: 180px;
@@ -348,7 +343,7 @@ section {
   }
 }
 #menu-toggle {
-  display: none; /* Oculta em telas grandes */
+  display: none; 
   background-color: #f2be00;
   color: white;
   padding: 10px 15px;
@@ -360,18 +355,18 @@ section {
 
 @media (max-width: 768px) {
   #menu {
-    display: none; /* Oculta o menu por padrão */
+    display: none; 
     flex-direction: column;
     gap: 15px;
     text-align: center;
   }
 
   #menu.active {
-    display: flex; /* Mostra o menu ao clicar */
+    display: flex; 
   }
 
   #menu-toggle {
-    display: block; /* Exibe o botão hambúrguer em telas pequenas */
+    display: block; 
   }
   .bnt {
     width: 100%;
@@ -379,11 +374,11 @@ section {
     padding: 10px 40px;
   }
 }
-/*Banner com Javascript*/
+
 .carousel {
   position: relative;
   width: 100%;
-  height: 80vh; /* Altura proporcional à tela */
+  height: 80vh; 
   overflow: hidden;
 }
 
@@ -409,7 +404,6 @@ section {
   object-fit: cover;
 }
 
-/* Conteúdo sobre o banner */
 .banner-content {
   position: absolute;
   top: 50%;
@@ -417,7 +411,7 @@ section {
   transform: translateY(-50%);
   color: white;
   z-index: 2;
-  max-width: 40%; /* Limita largura do texto */
+  max-width: 40%; 
 }
 
 .banner-content h1 {
@@ -462,7 +456,6 @@ section {
   background-color: #f0f0f0;
 }
 
-/* Botões de navegação do carrossel */
 button.prev,
 button.next {
   position: absolute;
@@ -486,7 +479,6 @@ button.next {
   right: 10px;
 }
 
-/* ======== Responsividade ======== */
 @media (max-width: 1024px) {
   .banner-content {
     max-width: 50%;
@@ -504,7 +496,7 @@ button.next {
 
 @media (max-width: 768px) {
   .carousel {
-    height: 60vh; /* Reduz altura em telas menores */
+    height: 60vh; 
     margin-bottom: 20px;
     transition: transform 2s ease-in-out;
   }
@@ -562,7 +554,6 @@ button.next {
   }
 }
 
-/* Layout padrão (desktop) */
 #container-choose {
   width: 100%;
   min-height: 60vh;
@@ -570,12 +561,11 @@ button.next {
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
-  gap: 40px; /* Espaço entre imagem e texto */
+  gap: 20px; 
 }
 
-/* Ajuste do conteúdo */
 #flex-choose {
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -591,11 +581,21 @@ button.next {
   font-weight: bold;
 }
 #flex-choose p{
+
   color: #bababa;
   font-weight: 200;
   font-size: 0.8rem;
 }
+#choose {
+  width: 100%;
+  justify-content: space-between;
+  text-align:left;
+}
 #choose span{
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  margin-left: 0;
   font-size: 1rem;
   color: #002244;
   font-weight: bold;
@@ -605,8 +605,13 @@ button.next {
   color: white;
   padding: 5px;
 }
+.icons-choose {
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
 
-/* Imagem */
 #img-choose {
   width: 40%;
   display: flex;
@@ -620,7 +625,6 @@ button.next {
   height: auto;
 }
 
-/* Grid */
 #choose {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -630,10 +634,9 @@ button.next {
   max-width: 800px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   #container-choose {
-    flex-direction: column; /* Muda para coluna em telas menores */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -649,10 +652,11 @@ button.next {
   }
 
   #choose {
-    grid-template-columns: 1fr; /* Apenas 1 coluna em telas menores */
+    grid-template-columns:repeat(1fr);
+    place-items: center;
   }
 }
-/* Delivery Team */
+
 #delivery-team {
   padding: 50px 20px;
   background-color: #fff;
@@ -668,11 +672,10 @@ button.next {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 1200px; /* Evita que fique muito largo */
+  max-width: 1200px; 
   width: 100%;
 }
 
-/* Títulos */
 .flex-team h2 {
   font-size: 14px;
   color: #f2be00;
@@ -687,7 +690,6 @@ button.next {
   margin-bottom: 40px;
 }
 
-/* Container da equipe */
 .team-meet {
   display: flex;
   flex-wrap: wrap;
@@ -696,7 +698,6 @@ button.next {
   margin-top: 30px;
 }
 
-/* Cards dos membros */
 .image {
   background-color: #eceaea;
   border-radius: 8px;
@@ -704,11 +705,10 @@ button.next {
   text-align: center;
   padding: 20px;
   width: 100%;
-  max-width: 200px; /* Mantém o tamanho dos cards controlado */
+  max-width: 200px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito hover somente para dispositivos que usam mouse */
 @media (hover: hover) {
   .image:hover {
     transform: translateY(-10px);
@@ -716,7 +716,6 @@ button.next {
   }
 }
 
-/* Imagem dentro do card */
 .image img {
   width: 100%;
   height: auto;
@@ -724,7 +723,6 @@ button.next {
   margin-bottom: 15px;
 }
 
-/* Nome do membro */
 .image p {
   font-size: 18px;
   font-weight: bold;
@@ -732,27 +730,25 @@ button.next {
   margin: 10px 0 5px;
 }
 
-/* Cargo do membro */
 .image span {
   font-size: 14px;
   color: #777;
   font-style: italic;
 }
 
-/* Ajustes para telas menores */
 @media (max-width: 768px) {
   .flex-team h1 {
     font-size: 24px;
   }
 
   .team-meet {
-    flex-direction: column; /* Empilhar os cards */
+    flex-direction: column; 
     align-items: center;
     margin-top: 5px;
   }
 
   .image {
-    max-width: 250px; /* Aumenta um pouco o tamanho para telas menores */
+    max-width: 250px; 
   }
   .image:hover {
     transform: translateY(-10px);
@@ -765,23 +761,22 @@ button.next {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 }
-/* Estilização do rodapé */
+
 #rodape {
   background-color: #0c2b4a;
   color: white;
   padding: 40px 20px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+  flex-wrap: wrap;
   gap: 20px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* Cada coluna do rodapé */
 #flex-rodape {
   flex: 1;
-  min-width: 220px; /* Define um tamanho mínimo para evitar colapsos */
+  min-width: 220px; 
   margin-left: 20px;
 }
 
@@ -818,15 +813,14 @@ button.next {
   color: #f2be00;
 }
 
-/* Estilização do input e botão do Newsletter */
 .newsletter {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaçamento entre o input e o botão */
+  gap: 10px; 
 }
 
 #flex-rodape input {
-  flex: 1; /* Ocupar o máximo de espaço possível */
+  flex: 1; 
   padding: 10px;
   border: none;
   outline: none;
@@ -842,14 +836,13 @@ button.next {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
-  white-space: nowrap; /* Evita que o texto do botão quebre */
+  white-space: nowrap; 
 }
 
 #flex-rodape button:hover {
   background-color: #e0a800;
 }
 
-/* Redes sociais */
 .redes {
   display: inline-block;
   font-size: 14px;
@@ -876,7 +869,6 @@ button.next {
   background-color: #f3c334;
 }
 
-/* 📱 Responsividade */
 @media (max-width: 768px) {
   #rodape {
     flex-direction: column;
@@ -887,7 +879,7 @@ button.next {
     margin-left: 0;
   }
   .newsletter {
-    flex-direction: column; /* Em telas pequenas, empilha o input e botão */
+    flex-direction: column; 
     gap: 5px;
   }
   #flex-rodape input,
@@ -904,27 +896,36 @@ button.next {
 }
 
 #copyn {
+  width: 100%;
+  display: flex;
   background-color: #002244;
   color: white;
   text-align: center;
   padding: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: cente;
 }
 .copy{
   display: flex;
+  width: 100%;
   align-items: center;
   text-align: center;
   margin-left: 150px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 .copy1 {
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: end;
   text-align: center;
   margin-right: 150px;
 }
 @media (max-width: 768px) {
+  #copyn{
+    flex-direction: column;
+  }
   .copy {
     flex-direction: column;
     align-items: center;
