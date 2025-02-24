@@ -644,6 +644,13 @@ button.next {
     width: 100%;
     margin-top: 10px;
   }
+  .img-choose{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   #flex-choose {
     width: 100%;
@@ -652,13 +659,11 @@ button.next {
   }
 
   #choose {
-    grid-template-columns:repeat(1fr);
+    grid-template-columns:repeat(2, 1fr);
+    padding: 10px;
     place-items: center;
   }
-  .icons-choose span{
-    font-size: 10px;
-    margin-bottom: 5px;
-  }
+  
 }
 
 #delivery-team {
